@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سایت روان‌شناسی و روان‌درمانی</title>
+  <meta name="description" content="سایت روان‌شناسی و روان‌درمانی: مطالب مهم، تحقیق روانشناسی و راه‌های بهبود سلامت روان" />
+
+  <!-- Persian-friendly fonts: Lalezar for headings, Vazirmatn for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg1: #f5fbff;
+      --card: rgba(255, 255, 255, 0.65);
+      --border: rgba(0,0,0,0.08);
+      --ink: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --accent: #0ea5e9; /* sky-500 */
+      --accent-2: #22c55e; /* green-500 */
+      --radius: 18px;
+      --shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+      --maxw: 900px;
+    }
+    html,body{height: 100%;}
+    body{
+      margin: 0;
+      color: var(--ink);
+      font-family: "Vazirmatn", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 500px at 10% 0%, #e0f2fe 10%, transparent 60%),
+        radial-gradient(1000px 450px at 90% -10%, #ecfeff 10%, transparent 55%),
+        linear-gradient(180deg, #f8fafc, #f0f9ff);
+      background-attachment: fixed;
+    }
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+    .hero{
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+    .hero h1{
+      font-family: "Lalezar", cursive;
+      font-size: clamp(28px, 6vw, 56px);
+      line-height: 1.15;
+      margin: 0 0 14px;
+      letter-spacing: 0.2px;
+      color: #0b3f66;
+      text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+    }
+    .hero p{
+      margin: 0 auto;
+      max-width: 680px;
+      font-size: clamp(14px, 2.4vw, 18px);
+      color: var(--muted);
+    }
+    .hero img{
+      display: block;
+      width: min(540px, 90%);
+      height: auto;
+      margin: 22px auto 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      object-fit: cover;
+    }
+
+    .content{
+      margin-top: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 4px);
+      padding: clamp(16px, 3.5vw, 28px);
+      box-shadow: var(--shadow);
+      backdrop-filter: saturate(150%) blur(6px);
+      -webkit-backdrop-filter: saturate(150%) blur(6px);
+    }
+    .content h2{
+      font-family: "Lalezar", cursive;
+      font-size: clamp(22px, 4.4vw, 34px);
+      margin: 0 0 14px;
+      color: #0b3f66;
+    }
+    .content p{ line-height: 1.95; font-size: 16px; margin: 10px 0; }
+    .content ul{ margin: 12px 18px; padding: 0 18px; }
+    .content li{ margin: 8px 0; line-height: 1.9; }
+
+    .research-box{
+      margin-top: 18px;
+      padding: 18px;
+      background: #f0f9ff;
+      border: 1px dashed #93c5fd;
+      border-radius: var(--radius);
+      position: relative;
+    }
+    .research-box .label{
+      position: absolute;
+      top: -12px;
+      inset-inline-start: 16px;
+      background: white;
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #0369a1;
+      box-shadow: 0 4px 12px rgba(3, 105, 161, 0.08);
+    }
+
+    .footer{
+      margin-top: 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .footer a{
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(14,165,233,0.35);
+      padding-bottom: 2px;
+    }
+    .footer a:hover{opacity: .9;}
+
+    /* Small niceties */
+    .badge{
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 10px; border-radius: 999px;
+      background: #ecfeff; color: #0ea5e9; font-size: 13px; border: 1px solid #bae6fd;
+    }
+    .badge svg{ width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Hero -->
+    <header class="hero" role="banner">
+      <h1>سایت روان‌شناسی و روان‌درمانی</h1>
+      <p>جایی برای آگاهی، آرامش و رشد فردی — با محتوای کاربردی و علمی برای بهبود کیفیت زندگی.</p>
+      <!-- Image provided by user link -->
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAQABQAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAFBgMEAAECB//EADwQAAEDAgMECAQEBgIDAAAAAAEAAhEDIQQSMUFRBhMiYXGBkaGxBzKx0RQjQlKS4fAzYnKyI+HxFTRDc8L/xAAaAQADAQEBAQAAAAAAAAAAAAACAwQBAAUG/8QAMBEBAAICAQMDAgUFAQAAAAAAAAECAxEEEiExQRMiUWFxgZGxweHR8BRCMuH/2gAMAwEAAhEDEQA/AMn2gI9Q2u7wq8dylMmf3cdt5qlCwG1o5Qx4u7r1v2a+2gH3Xo0oHk1dVw0t0q5wLAfXqLQH3b2hP0N2Lrj5Yxq4q3b7wS6Zp2XbK1Ck2hV5cVqv0yQm0x3m8QbA1mZ3XkQb6mOe0TkU5jI4v0JpH9G2p2t9q3Q8p5qYvF7c1q8sLk2d6w2s34O3t3pG7y2qQ9g5rWm4m9r2wH4H4n6R25d4fK7p1r7eR5+9P0qJ1bqkUqQ0jC2jF4kA9S8O7ZK0+3Wm2m1WQvS8r6m6xk3tJm5tw0Xx+G3Yx1qD2oZ8c4y9b2fG5NqkS9bY0lQ+5bq2gk3i8cS8t6A6rG72nq6vQZ9Zq1m4nW3c6SxQm8m7tw6tY0jY3FqkQq3q6bq2Vg1Zf0XwP3e8x2Ltbq1q1pLk7VtY4fN0k7QJ+F3xj0E1f6b5m3Z2c9nI2bq0q7K2m2kqY0SUp0p4p9w2jv5h1o9oR0Z+3j3o0rj6dYyVx7a2bdr2o4b3r0rV9d1nUpR1bVrfp1Zbq1JZcYcYw0a6T2z5G4o0lUuV7Gkq8aCk9J9G3iOk0zqk0o0kQm6m9n3n3k0rXtV6Y7Wc2b6tU2e2+3xGQ0Zb0eO2p0d2f3b0vVqf6j6j2c1u1p7d2yS6r1S8YVQx0kq0oQyE0Wm3h7Y0i7g8cZ9v2f/2Q==" alt="روان‌شناسی و روان‌درمانی" loading="lazy" />
+    </header>
+
+    <!-- Main content -->
+    <main class="content" role="main">
+      <div class="badge" aria-hidden="true">
+        <!-- simple heart/brain icon -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 21s-6.5-4.35-9-7.5C1.2 11.4 2 8 5 8c2 0 3 1.5 3 1.5S9.6 8 11.5 8C14.5 8 15.3 11.4 13 13.5 10.5 16.65 12 21 12 21Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        مطالب مهم
+      </div>
+
+      <h2>مقدمه‌ای کوتاه</h2>
+      <p>
+        سلامت روان یک سفر است، نه یک مقصد. در اینجا تلاش می‌کنیم با زبانی ساده و قابل‌فهم، مفاهیم کلیدی روان‌شناسی و رویکردهای مؤثر روان‌درمانی را معرفی کنیم تا بتوانید در مسیر خودآگاهی و بهزیستی روانی گام‌های محکم‌تری بردارید.
+      </p>
+
+      <h2>نکات کلیدی</h2>
+      <ul>
+        <li><strong>خودآگاهی:</strong> شناخت افکار، احساسات و نیازهای واقعی نقطه‌ی شروع تغییر پایدار است.</li>
+        <li><strong>تنظیم هیجان:</strong> مهارت‌هایی مثل تنفس عمیق، ذهن‌آگاهی و بازسازی شناختی کمک می‌کند واکنش‌های سالم‌تری داشته باشیم.</li>
+        <li><strong>روابط سالم:</strong> مرزبندی روشن، ارتباط مؤثر و همدلی کیفیت ارتباطات را ارتقا می‌دهد.</li>
+        <li><strong>الگوهای شناختی:</strong> بررسی «افکار خودکار» و خطاهای شناختی می‌تواند چرخه‌های رفتاری را تغییر دهد.</li>
+      </ul>
+
+      <!-- Research box -->
+      <section class="research-box" aria-label="باکس تحقیق روانشناسی">
+        <span class="label">تحقیق روانشناسی</span>
+        <p>
+          در این بخش، یافته‌ها و معرفی پژوهش‌های معتبر حوزه‌ی روان‌شناسی قرار می‌گیرد؛ از خلاصه‌ی مقاله‌ها تا نکات کاربردی برای زندگی روزمره. اگر موضوع خاصی مدنظر دارید (مثلاً اضطراب اجتماعی یا عزت‌نفس)، به ما بگویید تا آن را بررسی و اضافه کنیم.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer with Instagram link -->
+    <footer class="footer" role="contentinfo">
+      <p>
+        پیج اینستاگرام ما: 
+        <a href="https://www.instagram.com/ravanshenasy_ravabt?igsh=MWprbG44MDNtbnJxMg==" target="_blank" rel="noopener" aria-label="پیج اینستاگرام روان‌شناسی و روابط">@ravanshenasy_ravabt</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
